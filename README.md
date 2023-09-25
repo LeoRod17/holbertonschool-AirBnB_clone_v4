@@ -162,3 +162,10 @@ David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twit
 Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection. 
+
+fourth part of part of Airbnb:
+we will be adding:
+a script that starts a Flask web application:
+making it more dynamic
+addding something to get the status of the apis
+and adding more scripts
