@@ -12,8 +12,6 @@ app = Flask(__name__)
 # app.jinja_env.trim_blocks = True
 # app.jinja_env.lstrip_blocks = True
 
-cache_id = str(uuid.uuid4())
-
 
 @app.teardown_appcontext
 def close_db(error):
