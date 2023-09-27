@@ -19,7 +19,16 @@ $(document).ready(function ()
         }
         $('.amenities h4').text(amenities);
     });
-    let xmlh = new XMLHttpRequest();
-    xmlh.open("GET","http://0.0.0.0:5001/api/v1/status/",true);
-    
+    $.ajax({
+        method: 'GET',
+        url: 'http://localhost:5001/api/v1/status/',
+        success: function(data){
+            if(data.status === 'OK'){
+                $('div#api_status').addClass('available');
+            }
+            else{
+                $('div#api_status').removeClass();
+            }
+        }
+    });
 });
